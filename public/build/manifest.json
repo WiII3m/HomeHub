@@ -1,0 +1,33 @@
+{
+  "node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.eot": {
+    "file": "assets/glyphicons-halflings-regular-BUJKDMgK.eot",
+    "src": "node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.eot"
+  },
+  "node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.svg": {
+    "file": "assets/glyphicons-halflings-regular-CSehLiBc.svg",
+    "src": "node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.svg"
+  },
+  "node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf": {
+    "file": "assets/glyphicons-halflings-regular-DrwTMapi.ttf",
+    "src": "node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf"
+  },
+  "node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff": {
+    "file": "assets/glyphicons-halflings-regular-BKjkU69z.woff",
+    "src": "node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff"
+  },
+  "node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2": {
+    "file": "assets/glyphicons-halflings-regular-DzqM6ju8.woff2",
+    "src": "node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-DvWuBpPw.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-BgFWlIy6.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  }
+}
