@@ -1,0 +1,158 @@
+.margin-top-neg-8 { margin-top: -8px; }
+
+.camera-container {
+    background-color: #f9f9f9;
+    margin: 16px 0;
+    border-radius: 6px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.camera-media {
+    display: block;
+    border-radius: 6px;
+}
+
+img.camera-media {
+    width: auto;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (min-width: 640px) {
+    .camera-container {
+        height: 0;
+        padding-bottom: 56.25%;
+    }
+
+    .camera-media {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    img.camera-media{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 639px) {
+    .camera-container {
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .camera-media {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.ptz-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ptz-grid {
+    display: table;
+    border-spacing: 4px;
+}
+
+.ptz-row {
+    display: table-row;
+}
+
+.ptz-cell {
+    display: table-cell;
+    width: 56px;
+    height: 56px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.ptz-button {
+    width: 48px;
+    height: 48px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background-color: #f8f9fa;
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 48px;
+    transition: all 0.15s ease;
+}
+
+.ptz-button.ptz-power {
+    background-color: #28a745;
+    color: white;
+    border-color: #28a745;
+    border-radius: 50%;
+    font-size: 22px;
+    line-height: 46px;
+}
+
+.ptz-button.ptz-power.active {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.ptz-button.ptz-power.loading {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #212529;
+}
+
+.ptz-button span {
+    line-height: 1;
+    display: inline-block;
+}
+
+.ptz-button.ptz-left span {
+    transform: rotate(-90deg);
+}
+
+.ptz-button.ptz-right span {
+    transform: rotate(90deg);
+}
+
+.ptz-button:disabled {
+    background-color: #f5f5f5;
+    color: #999;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.ptz-button.ptz-power:disabled {
+    background-color: #f5f5f5;
+    color: #999;
+    border-color: #ccc;
+}
+
+.camera-placeholder {
+    max-width: 80px;
+    height: auto;
+}
+

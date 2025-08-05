@@ -1,0 +1,13 @@
+
+.room-section:last-child {
+    margin-bottom: 0;
+}
+
+.light-name-ellipsis {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+

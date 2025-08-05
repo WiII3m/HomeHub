@@ -1,0 +1,15 @@
+{
+    "name": "lights",
+    "enabled": true,
+    "priority": 90,
+    "description": "Process light switch data and online/offline events",
+    "conditions": {
+        "data_fields": [
+            "switch_led"
+        ],
+        "biz_codes": [
+            "deviceOnline",
+            "deviceOffline"
+        ]
+    }
+}

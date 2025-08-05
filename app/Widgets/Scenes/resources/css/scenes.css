@@ -1,0 +1,8 @@
+ [data-scene-id].loading {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+ [data-scene-id].success {
+    background-color: #d4edda !important;
+}

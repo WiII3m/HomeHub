@@ -1,0 +1,19 @@
+{
+    "name": "cameras",
+    "title": "Caméras",
+    "icon": "📹",
+    "enabled": true,
+    "description": "Widget de contrôle des caméras connectées Tuya",
+    "version": "1.0.0",
+    "author": "Willem VERRIER",
+    "assets": {
+        "js": ["resources/js/cameras.js"],
+        "css": ["resources/css/cameras.css"]
+    },
+    "node_plugin": {
+        "enabled": true,
+        "middleware_path": "node-plugin/middleware.js",
+        "config_path": "node-plugin/config.json",
+        "priority": 80
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "name": "helloworld",
+    "title": "Hello World",
+    "icon": "👋",
+    "enabled": true,
+    "description": "Widget de démonstration pour comprendre l'architecture des widgets",
+    "version": "1.0.0",
+    "author": "Willem VERRIER",
+    "assets": {
+        "js": ["resources/js/hello-world.js"],
+        "css": ["resources/css/hello-world.css"]
+    }
+}

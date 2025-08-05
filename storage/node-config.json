@@ -1,0 +1,59 @@
+{
+    "generated_at": "2025-08-05T21:24:55.878136Z",
+    "laravel_version": "12.20.0",
+    "total_widgets": 5,
+    "total_plugins": 3,
+    "plugins": [
+        {
+            "name": "thermometers",
+            "enabled": true,
+            "priority": 100,
+            "middleware_path": "/Users/willem/Sites/localhost/homehub/app/Widgets/Thermometers/node-plugin/middleware.js",
+            "conditions": {
+                "data_fields": [
+                    "temp_current",
+                    "humidity_value"
+                ]
+            },
+            "description": "Process temperature data with heat index calculation and color coding",
+            "widget_name": "Thermometers",
+            "widget_path": "/Users/willem/Sites/localhost/homehub/app/Widgets/Thermometers"
+        },
+        {
+            "name": "lights",
+            "enabled": true,
+            "priority": 90,
+            "middleware_path": "/Users/willem/Sites/localhost/homehub/app/Widgets/Lights/node-plugin/middleware.js",
+            "conditions": {
+                "data_fields": [
+                    "switch_led"
+                ],
+                "biz_codes": [
+                    "deviceOnline",
+                    "deviceOffline"
+                ]
+            },
+            "description": "Process light switch data and online/offline events",
+            "widget_name": "Lights",
+            "widget_path": "/Users/willem/Sites/localhost/homehub/app/Widgets/Lights"
+        },
+        {
+            "name": "cameras",
+            "enabled": true,
+            "priority": 80,
+            "middleware_path": "/Users/willem/Sites/localhost/homehub/app/Widgets/Cameras/node-plugin/middleware.js",
+            "conditions": {
+                "data_fields": [
+                    "basic_private"
+                ],
+                "biz_codes": [
+                    "deviceOnline",
+                    "deviceOffline"
+                ]
+            },
+            "description": "Process camera privacy mode data and online/offline events",
+            "widget_name": "Cameras",
+            "widget_path": "/Users/willem/Sites/localhost/homehub/app/Widgets/Cameras"
+        }
+    ]
+}

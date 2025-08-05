@@ -1,0 +1,13 @@
+{
+    "name": "thermometers",
+    "title": "Thermomètres",
+    "icon": "🌡️",
+    "enabled": true,
+    "description": "Widget de gestion des thermomètres et capteurs de température Tuya",
+    "version": "1.0.0",
+    "author": "Willem VERRIER",
+    "assets": {
+        "js": ["resources/js/thermometers.js", "resources/js/thermometers-charts.js"],
+        "css": ["resources/css/thermometers.css"]
+    }
+}

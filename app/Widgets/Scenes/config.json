@@ -1,0 +1,21 @@
+{
+    "name": "scenes",
+    "title": "Scènes",
+    "icon": "🎬",
+    "enabled": true,
+    "dependencies": ["tuya"],
+    "description": "Contrôle des scènes d'éclairage Tuya",
+    "version": "1.0.0",
+    "author": "Willem VERRIER",
+    "assets": {
+        "js": ["resources/js/scenes.js"],
+        "css": ["resources/css/scenes.css"]
+    },
+    "routes": [
+        {
+            "method": "POST",
+            "path": "/scenes/{sceneId}/trigger",
+            "name": "scenes.trigger"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "thermometers",
+  "enabled": true,
+  "priority": 100,
+  "conditions": {
+    "data_fields": ["temp_current", "humidity_value"]
+  },
+  "description": "Process temperature data with heat index calculation and color coding"
+}

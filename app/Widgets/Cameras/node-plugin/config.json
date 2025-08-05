@@ -1,0 +1,15 @@
+{
+    "name": "cameras",
+    "enabled": true,
+    "priority": 80,
+    "description": "Process camera privacy mode data and online/offline events",
+    "conditions": {
+        "data_fields": [
+            "basic_private"
+        ],
+        "biz_codes": [
+            "deviceOnline",
+            "deviceOffline"
+        ]
+    }
+}

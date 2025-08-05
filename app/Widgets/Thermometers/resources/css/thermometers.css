@@ -1,0 +1,11 @@
+.data-row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.margin-vertical-12 { margin-top: 12px; margin-bottom: 12px; }
+
+.period-btn {
+    min-width: 60px;
+}

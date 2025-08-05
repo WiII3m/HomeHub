@@ -1,0 +1,35 @@
+* {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+html, body {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    touch-action: manipulation;
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+main {
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+    position: relative;
+}
+
+button{
+    -webkit-user-select: none;
+    cursor: pointer;
+}
+
+button:not(.btn):active,
+button:not(.btn):hover{
+    color: inherit !important;
+    background-color: inherit !important;
+    background-image: none !important;
+    border-color: inherit !important;
+    box-shadow: inherit !important;
+}

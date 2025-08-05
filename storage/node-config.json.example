@@ -1,0 +1,15 @@
+{
+  "generated_at": "2025-01-22T10:30:00Z",
+  "plugins": [
+    {
+      "name": "thermometers",
+      "enabled": true,
+      "priority": 100,
+      "middleware_path": "/Users/willem/Sites/localhost/homehub/app/Widgets/Thermometers/node-plugin/middleware.js",
+      "conditions": {
+        "data_fields": ["temp_current", "humidity_value"]
+      },
+      "description": "Process temperature data with heat index calculation and color coding"
+    }
+  ]
+}

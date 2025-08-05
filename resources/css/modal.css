@@ -1,0 +1,139 @@
+.dashboard-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 910;
+    display: none;
+    overflow: hidden;
+    outline: 0;
+    -webkit-overflow-scrolling: touch;
+}
+
+.dashboard-modal.show {
+    display: block !important;
+}
+
+.dashboard-modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 900;
+    background-color: #000;
+    opacity: 0;
+    transition: opacity 0.15s linear;
+}
+
+.dashboard-modal-backdrop.show {
+    opacity: 0.5;
+}
+
+.dashboard-modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px auto;
+    max-width: 600px;
+    top: 30px;
+}
+
+.dashboard-modal-content {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #999;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 6px;
+    box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    background-clip: padding-box;
+    outline: 0;
+}
+
+.dashboard-modal-header {
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+    min-height: 16.42857143px;
+}
+
+.dashboard-modal-header .close {
+    margin-top: -2px;
+}
+
+.dashboard-modal-title {
+    margin: 0;
+    line-height: 1.42857143;
+}
+
+.dashboard-modal-body {
+    position: relative;
+    padding: 15px;
+    overflow: visible;
+}
+
+.dashboard-modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+}
+
+.dashboard-modal-footer .btn + .btn {
+    margin-left: 5px;
+    margin-bottom: 0;
+}
+
+.dashboard-modal-footer .btn-group .btn + .btn {
+    margin-left: -1px;
+}
+
+.dashboard-modal .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 920;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 0.2;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.dashboard-modal .close:hover,
+.dashboard-modal .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+@media screen and (min-width: 768px) {
+    .dashboard-modal-dialog {
+        top: 60px;
+    }
+}
+
+.dashboard-modal-body {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+@media (max-width: 767px) {
+    .dashboard-modal-dialog {
+        margin: 10px auto;
+        top: 20px;
+    }
+
+    .dashboard-modal-body {
+        max-height: 400px;
+    }
+}
+
+body.dashboard-modal-open {
+    overflow: hidden;
+}

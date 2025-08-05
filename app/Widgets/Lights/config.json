@@ -1,0 +1,19 @@
+{
+    "name": "lights",
+    "title": "Lumières",
+    "icon": "💡",
+    "enabled": true,
+    "description": "Widget de contrôle des lumières connectées Tuya",
+    "version": "1.0.0",
+    "author": "Willem VERRIER",
+    "assets": {
+        "js": ["resources/js/lights.js"],
+        "css": ["resources/css/lights.css"]
+    },
+    "node_plugin": {
+        "enabled": true,
+        "middleware_path": "node-plugin/middleware.js",
+        "config_path": "node-plugin/config.json",
+        "priority": 90
+    }
+}
