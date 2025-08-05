@@ -8,7 +8,7 @@ Le projet repose sur une **architecture modulaire avancée** conçue pour la sca
 
 - **Backend** : Laravel 12, PHP 8.2+
 - **Frontend** : Vanilla JS, Bootstrap 3
-- **Temps réel** : Node.js, WebSocket ([📖 Architecture détaillée](REALTIME_ARCHITECTURE.md))
+- **Temps réel** : Node.js, WebSocket ([📖 Architecture détaillée](realtime_architecture.md))
 - **API** : Tuya Cloud IoT Platform
 
 ## ⚙️ Architecture modulaire
@@ -45,7 +45,7 @@ Widget/
 - **Évolutivité** : Ajout/suppression/désactivation de widgets sans impact sur l'application.
 - **Maintenabilité** : Logique métier compartimentée et testable indépendamment.
 
-➡️ **[📖 Guide de création de widgets](WIDGET_CREATION.md)**
+➡️ **[📖 Guide de création de widgets](widget_creation.md)**
 
 ## 📐 Tests
 
